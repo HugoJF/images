@@ -27,6 +27,8 @@ RUN         chown -R 998:997 /usr/local/steamcmd
 
 RUN         chmod -R 777 /usr/local/steamcmd/
 
+RUN         /usr/local/steamcmd/steamcmd.sh +login anonymous +quit
+
 USER        container
 ENV         HOME /home/container
 WORKDIR     /home/container
